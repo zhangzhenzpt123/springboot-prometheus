@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: springboot-prometheus
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+  prometheus:
+    metrics:
+      export:
+        enabled: true
